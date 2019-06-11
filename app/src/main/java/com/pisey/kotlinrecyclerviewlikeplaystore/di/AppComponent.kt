@@ -11,23 +11,27 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [
-    AndroidSupportInjectionModule::class,
-    ActivityBuilder::class,
-    AppModule::class
+        AndroidSupportInjectionModule::class,
+        ActivityBuilder::class,
+        AppModule::class
     ]
 )
 
-interface AppComponent :AndroidInjector<MyApp>{
+interface AppComponent : AndroidInjector<MyApp> {
 
     @Component.Builder
-    interface Builder{
+    interface Builder {
 
         @BindsInstance
-        fun application(application :MyApp):Builder
+        fun application(application: MyApp): Builder
 
         fun database(database: DatabaseModule): Builder
 
-        fun build():AppComponent
+        fun firebase(firebase: FirebaseModule): Builder
+
+        fun network(network: NetworkModule): Builder
+
+        fun build(): AppComponent
     }
 
     override fun inject(instance: MyApp)

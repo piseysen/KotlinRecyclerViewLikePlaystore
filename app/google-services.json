@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "897382872090",
+    "firebase_url": "https://examplemvvm1.firebaseio.com",
+    "project_id": "examplemvvm1",
+    "storage_bucket": "examplemvvm1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897382872090:android:189350b52b8f7d3d",
+        "android_client_info": {
+          "package_name": "com.pisey.kotlinrecyclerviewlikeplaystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897382872090-9fqbhrpg9qsvp2jm3e0b9uidvnfsh07f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjeqTKiXCeuQA7b5Wojbzz3NGse2Eab5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897382872090-9fqbhrpg9qsvp2jm3e0b9uidvnfsh07f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

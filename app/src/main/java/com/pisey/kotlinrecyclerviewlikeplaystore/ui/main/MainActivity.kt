@@ -8,7 +8,7 @@
  * @Created by piseysen on 6/10/19 2:47 PM
  */
 
-package com.pisey.kotlinrecyclerviewlikeplaystore.ui
+package com.pisey.kotlinrecyclerviewlikeplaystore.ui.main
 
 import android.os.Bundle
 import android.widget.TextView

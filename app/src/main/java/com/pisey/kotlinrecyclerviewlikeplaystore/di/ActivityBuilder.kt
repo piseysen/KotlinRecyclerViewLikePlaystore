@@ -1,6 +1,6 @@
 package com.pisey.kotlinrecyclerviewlikeplaystore.di
 
-import com.pisey.kotlinrecyclerviewlikeplaystore.ui.MainActivity
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
