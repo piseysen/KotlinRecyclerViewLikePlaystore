@@ -10,10 +10,15 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.pisey.kotlinrecyclerviewlikeplaystore.R
+import com.pisey.kotlinrecyclerviewlikeplaystore.data.model.CountryModel
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.component.adapter.CountryAdapter
 import dagger.android.support.AndroidSupportInjection
+import kotlinx.android.synthetic.main.home_fragment.*
 import javax.inject.Inject
 
 class HomeFragment : Fragment() {
+
+    private var mCountryAdapter: CountryAdapter? = null
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -36,12 +41,22 @@ class HomeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        recycler_view?.apply {
+            adapter = mCountryAdapter
+        }
+
         viewModel.countryLiveData.observe(this, Observer {
             if (it.isSuccess) {
                 val result = it.getOrNull()
-                println("items"+result?.size ?: 0)
-            } else {
-
+                println("items" + result?.size ?: 0)
+                val items=ArrayList<CountryModel>()
+                result?.forEach { country ->
+                  items.add(country)
+                }
+                mCountryAdapter = CountryAdapter(requireContext(),items)
+                recycler_view.adapter=mCountryAdapter
+                recycler_view.adapter?.notifyDataSetChanged()
             }
         })
         viewModel.getAllCountryList()

@@ -1,26 +1,26 @@
 package com.pisey.kotlinrecyclerviewlikeplaystore.data.model
 
 class CountryModel {
-    private var name: String? = "";
-    private var topLevelDomain: List<String>? = null
-    private var alpha2Code: String? = null
-    private var alpha3Code: String? = null
-    private var callingCodes: List<Any>? = null
-    private var capital: String? = null
-    private var altSpellings: List<Any>? = null
-    private var region: String? = null
-    private var subregion: String? = null
-    private var population: Int? = null
-    private var latlng: List<Any>? = null
-    private var demonym: String? = null
-    private var area: Double? = null
-    private var gini: Double? = null
-    private var timezones: List<String>? = null
-    private var borders: List<Any>? = null
-    private var nativeName: String? = null
-    private var numericCode: String? = null
-    private var currencies: List<String>? = null
-    private var languages: List<Any>? = null
-    private var translations: Translations? = null
-    private var relevance: String? = null
+    var name: String? = "";
+    var topLevelDomain: List<String>? = null
+    var alpha2Code: String? = null
+    var alpha3Code: String? = null
+    var callingCodes: List<Any>? = null
+    var capital: String? = null
+    var altSpellings: List<Any>? = null
+    var region: String? = null
+    var subregion: String? = null
+    var population: Int? = null
+    var latlng: List<Any>? = null
+    var demonym: String? = null
+    var area: Double? = null
+    var gini: Double? = null
+    var timezones: List<String>? = null
+    var borders: List<Any>? = null
+    var nativeName: String? = null
+    var numericCode: String? = null
+    var currencies: List<String>? = null
+    var languages: List<Any>? = null
+    var translations: Translations? = null
+    var relevance: String? = null
 }
