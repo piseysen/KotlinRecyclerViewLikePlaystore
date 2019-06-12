@@ -10,6 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.pisey.kotlinrecyclerviewlikeplaystore.R
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.home.HomeFragment
 import com.pisey.kotlinrecyclerviewlikeplaystore.util.ext.replaceFragment
+import com.pisey.kotlinrecyclerviewlikeplaystore.util.ext.setFragment
 import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -37,6 +38,8 @@ class MainActivity : DaggerAppCompatActivity() {
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
+        setFragment(layout_content.id,::HomeFragment)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
     }
+
 }
