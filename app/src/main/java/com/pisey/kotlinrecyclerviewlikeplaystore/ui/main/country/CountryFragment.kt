@@ -40,10 +40,6 @@ class CountryFragment : BaseFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        recycler_view?.apply {
-            adapter = mCountryAdapter
-        }
-
         viewModel.countryLiveData.observe(this, Observer {
             if (it.isSuccess) {
                 val result = it.getOrNull()
