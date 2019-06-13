@@ -8,6 +8,7 @@ Major libraries
   - Retrofit
   - RxJava
   - Glide
+  - RxFirebase
 <img src="https://github.com/piseysen/KotlinRecyclerViewLikePlaystore/blob/master/1_zQ8lmPudBJ1sdtzlkbaA7Q.png"/>
 
 3 Major parts to config project with Dagger2:
