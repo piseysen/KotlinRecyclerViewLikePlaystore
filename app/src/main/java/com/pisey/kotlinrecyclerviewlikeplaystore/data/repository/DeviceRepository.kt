@@ -17,7 +17,7 @@ import javax.inject.Singleton
 class DeviceRepository @Inject constructor(
     private val database: AppDatabase,
     private val dao: DeviceDao
-) : IDevice {
+) : IDeviceRepository {
     override fun save(device: DeviceEntity): Completable {
         return Completable.create {
             database.runInTransaction {

@@ -7,4 +7,10 @@ package com.pisey.kotlinrecyclerviewlikeplaystore.util
 
 object Constant {
     const val COUNTRY_SERVICE_BASE_URL = "https://restcountries.eu/rest/v1/"
+
+    object NavigateType{
+        const val FOOD=1
+        const val COUNTRY=2
+        const val ABOUT=3
+    }
 }

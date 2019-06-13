@@ -9,7 +9,7 @@ import com.pisey.kotlinrecyclerviewlikeplaystore.data.local.Entity.DeviceEntity
 import io.reactivex.Completable
 import io.reactivex.Single
 
-interface IDevice {
+interface IDeviceRepository {
     fun save(device:DeviceEntity):Completable
     fun get():Single<DeviceEntity>
 }

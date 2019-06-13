@@ -1,5 +1,109 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="app_elevation_bottom">8dp</dimen>
+
+    <dimen name="text_size_badge">8sp</dimen>
+    <dimen name="text_size_smallest">6sp</dimen>
+    <dimen name="text_size_smaller">8sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_medium15">15sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_larger">18sp</dimen>
+    <dimen name="text_size_largest">20sp</dimen>
+
+    <dimen name="padding_very_smaller">2dp</dimen>
+    <dimen name="padding_very_small">4dp</dimen>
+    <dimen name="padding_smallest">6dp</dimen>
+    <dimen name="padding_smaller">8dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding">12dp</dimen>
+    <dimen name="padding_medium">14dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_larger">18dp</dimen>
+    <dimen name="padding_largest">20dp</dimen>
+    <dimen name="padding_big_largest">30dp</dimen>
+    <dimen name="padding_very_big_largest">50dp</dimen>
+
+    <!--Tab-->
+    <dimen name="icon_tab_size">35dp</dimen>
+    <dimen name="text_tab_size">10sp</dimen>
+    <dimen name="tab_icon_size">28dp</dimen>
+    <dimen name="tab_text_size">9sp</dimen>
+
+    <!--NAVIGATION-->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_userprofil_height">60sp</dimen>
+    <dimen name="nav_header_username_textsize">20sp</dimen>
+    <dimen name="nav_header_job_textsize">14sp</dimen>
+    <dimen name="nav_menu_height">50dp</dimen>
+    <dimen name="nav_menu_margin_left">20dp</dimen>
+    <dimen name="nav_menu_icon_height">20dp</dimen>
+    <dimen name="nav_menu_title_textsize">14sp</dimen>
+    <dimen name="nav_submenu_title_textsize">12sp</dimen>
+    <dimen name="nav_submenu_title_margin_left">60dp</dimen>
+
+    <!--Action Bar Size-->
+    <dimen name="action_bar_size">48dp</dimen>
+    <dimen name="action_bar_size_medium">46dp</dimen>
+    <dimen name="action_bar_size_smallest">23dp</dimen>
+    <dimen name="action_bar_size_smaller">32dp</dimen>
+    <dimen name="action_bar_size_small">40dp</dimen>
+    <dimen name="action_bar_size_large">50dp</dimen>
+    <dimen name="action_bar_size_largest">70dp</dimen>
+    <dimen name="action_bar_size_very_large">100dp</dimen>
+    <dimen name="action_bar_size_very_larger">120dp</dimen>
+    <dimen name="action_bar_size_very_largest">150dp</dimen>
+    <!--End Action Bar-->
+
+    <dimen name="flag_width">30dp</dimen>
+    <dimen name="flag_height">30dp</dimen>
+
+    <dimen name="slide_height">210dp</dimen>
+    <dimen name="flex_height">100dp</dimen>
+    <dimen name="flex_height_small">82dp</dimen>
+    <dimen name="flex_height_smaller">78dp</dimen>
+    <dimen name="flex_height_smallest">50dp</dimen>
+
+
+    <!--product item-->
+    <dimen name="product_image_height">160dp</dimen>
+    <dimen name="product_width">160dp</dimen>
+
+    <dimen name="dialog_width_medium">450dp</dimen>
+
+    <!--Corner-->
+    <dimen name="border_general_radius">4dp</dimen>
+    <dimen name="border_corner">8dp</dimen>
+    <dimen name="border_corner_large">10dp</dimen>
+    <dimen name="border_corner_larger">15dp</dimen>
+    <dimen name="border_corner_largest">18dp</dimen>
+    <dimen name="border_corner_box_field">8dp</dimen>
+    <dimen name="border_corner_row_1">16dp</dimen>
+
+    <!--Border-->
+    <dimen name="border_no">0dp</dimen>
+    <dimen name="border_smallest">0.5dp</dimen>
+    <dimen name="border_smaller">1dp</dimen>
+    <dimen name="border_small">2dp</dimen>
+    <dimen name="border_medium">4dp</dimen>
+    <dimen name="border_large">6dp</dimen>
+    <dimen name="border_largest">8dp</dimen>
+
+    <item name="image_aspect_ratio" format="float" type="dimen">1.6</item>
+    <dimen name="default_image_size">100dp</dimen>
+
+    <dimen name="image_detail_height">270dp</dimen>
+
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
+    <dimen name="setting_icon_size">40dp</dimen>
 </resources>

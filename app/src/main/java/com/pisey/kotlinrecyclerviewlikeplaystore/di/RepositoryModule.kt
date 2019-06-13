@@ -5,8 +5,7 @@
 
 package com.pisey.kotlinrecyclerviewlikeplaystore.di
 
-import com.pisey.kotlinrecyclerviewlikeplaystore.data.repository.DeviceRepository
-import com.pisey.kotlinrecyclerviewlikeplaystore.data.repository.IDevice
+import com.pisey.kotlinrecyclerviewlikeplaystore.data.repository.*
 import dagger.Binds
 import dagger.Module
 
@@ -14,6 +13,12 @@ import dagger.Module
 interface RepositoryModule {
 
     @Binds
-    fun bindDeviceRepository(repository: DeviceRepository):IDevice
+    fun bindDeviceRepository(repository: DeviceRepository):IDeviceRepository
+
+    @Binds
+    fun bindCountryRepository(repository: CountryRepository):ICountryRepository
+
+    @Binds
+    fun bindProductRepository(response: ProductRepository):IProductRepository
 
 }

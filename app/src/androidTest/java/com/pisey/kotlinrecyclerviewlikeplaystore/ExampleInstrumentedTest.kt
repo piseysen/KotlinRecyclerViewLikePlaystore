@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2019. Cosync, IO.
- * @Author: Cosync, Inc
  * @Created by piseysen on 6/10/19 2:49 PM
  */
 

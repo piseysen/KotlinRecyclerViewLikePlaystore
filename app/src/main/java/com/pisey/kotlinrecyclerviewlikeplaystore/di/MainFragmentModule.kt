@@ -5,12 +5,16 @@
 
 package com.pisey.kotlinrecyclerviewlikeplaystore.di
 
-import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.home.HomeFragment
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.food.FoodFragment
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.country.CountryFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
 @Module
 internal abstract class MainFragmentModule {
     @ContributesAndroidInjector
-    internal abstract fun contributeHomeFragmentInjector(): HomeFragment
+    internal abstract fun contributeHomeFragmentInjector(): CountryFragment
+
+    @ContributesAndroidInjector
+    internal abstract fun contributeDashboardFragmentInjector(): FoodFragment
 }
