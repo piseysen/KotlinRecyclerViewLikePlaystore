@@ -17,7 +17,6 @@ import javax.inject.Singleton
 
 @Module
 open class NetworkModule {
-   //https://medium.com/@aaraashkhan/using-dagger2-and-retrofit-4b162d0a2021
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit {
