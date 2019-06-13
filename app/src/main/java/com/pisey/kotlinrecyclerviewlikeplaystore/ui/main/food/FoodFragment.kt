@@ -12,6 +12,7 @@ import com.pisey.kotlinrecyclerviewlikeplaystore.data.model.MyData
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.component.adapter.MyItemGroupAdapter
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.component.callback.IFirebaseLoadListener
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.component.fragment.BaseFragment
+import com.pisey.kotlinrecyclerviewlikeplaystore.util.Constant
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.dashboard_fragment.*
 import javax.inject.Inject
@@ -51,10 +52,10 @@ class FoodFragment : BaseFragment(), IFirebaseLoadListener {
                     val itemGroups = ArrayList<MyData>()
                     result.children.forEach { groupSnapShot ->
                         val itemGroup = MyData()
-                        val header = groupSnapShot.child("headerTitle").getValue(true).toString()
+                        val header = groupSnapShot.child(Constant.Key.HEADER_TITLE).getValue(true).toString()
                         itemGroup.headerTitle = header
                         val genericTypeIndicator = object : GenericTypeIndicator<java.util.ArrayList<ListItem>>() {}
-                        itemGroup.listItem = groupSnapShot.child("listItem").getValue(genericTypeIndicator)
+                        itemGroup.listItem = groupSnapShot.child(Constant.Key.LIST_ITEM).getValue(genericTypeIndicator)
                         itemGroups.add(itemGroup)
                     }
                     iFirebaseLoadListener?.onFirebaseLoadSuccess(itemGroups)

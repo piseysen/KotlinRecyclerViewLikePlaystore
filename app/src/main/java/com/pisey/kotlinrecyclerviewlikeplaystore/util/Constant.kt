@@ -13,4 +13,10 @@ object Constant {
         const val COUNTRY=2
         const val ABOUT=3
     }
+
+    object Key{
+        const val HEADER_TITLE= "headerTitle"
+        const val LIST_ITEM= "listItem"
+        const val MY_DATA="MyData"
+    }
 }

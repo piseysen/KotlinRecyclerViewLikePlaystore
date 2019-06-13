@@ -19,6 +19,6 @@ interface RepositoryModule {
     fun bindCountryRepository(repository: CountryRepository):ICountryRepository
 
     @Binds
-    fun bindProductRepository(response: ProductRepository):IProductRepository
+    fun bindProductRepository(response: FoodRepository):IFoodRepository
 
 }
