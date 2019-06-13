@@ -5,18 +5,20 @@
 
 package com.pisey.kotlinrecyclerviewlikeplaystore.util
 
-object Constant {
-    const val COUNTRY_SERVICE_BASE_URL = "https://restcountries.eu/rest/v1/"
+import com.pisey.kotlinrecyclerviewlikeplaystore.BuildConfig
 
-    object NavigateType{
-        const val FOOD=1
-        const val COUNTRY=2
-        const val ABOUT=3
+object Constant {
+    const val COUNTRY_SERVICE_BASE_URL =BuildConfig.BASE_COUNTRY_URL
+
+    object NavigateType {
+        const val FOOD = 1
+        const val COUNTRY = 2
+        const val ABOUT = 3
     }
 
-    object Key{
-        const val HEADER_TITLE= "headerTitle"
-        const val LIST_ITEM= "listItem"
-        const val MY_DATA="MyData"
+    object Key {
+        const val HEADER_TITLE = "headerTitle"
+        const val LIST_ITEM = "listItem"
+        const val MY_DATA = "MyData"
     }
 }

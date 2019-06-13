@@ -15,10 +15,15 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug{
+            buildConfigField 'String', "BASE_COUNTRY_URL", BASE_COUNTRY_URL
+        }
         release {
+            buildConfigField 'String', "BASE_COUNTRY_URL", BASE_COUNTRY_URL
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
     }
     dataBinding {
         enabled true
