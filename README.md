@@ -1,5 +1,5 @@
 # KotlinRecyclerViewLikePlaystore
-Kotlin with full MVVM architecture 
+Kotlin MVVM architecture with Dagger2
 
 Major libraries
   - Kotlin
