@@ -5,8 +5,9 @@
 
 package com.pisey.kotlinrecyclerviewlikeplaystore.di
 
-import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.food.FoodFragment
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.about.AboutFragment
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.country.CountryFragment
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.food.FoodFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -17,4 +18,7 @@ internal abstract class MainFragmentModule {
 
     @ContributesAndroidInjector
     internal abstract fun contributeDashboardFragmentInjector(): FoodFragment
+
+    @ContributesAndroidInjector
+    internal abstract fun contributeAboutFragmentInjector():AboutFragment
 }

@@ -7,8 +7,9 @@ package com.pisey.kotlinrecyclerviewlikeplaystore.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.food.FoodViewModel
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.about.AboutViewModel
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.country.CountryViewModel
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.food.FoodViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -27,4 +28,9 @@ interface ViewModelModule {
     @IntoMap
     @ViewModelKey(FoodViewModel::class)
     fun bindDashboardViewModel(viewModel: FoodViewModel):ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(AboutViewModel::class)
+    fun bindAboutViewModel(viewModel: AboutViewModel):ViewModel
 }

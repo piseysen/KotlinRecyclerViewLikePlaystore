@@ -8,6 +8,7 @@ import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.pisey.kotlinrecyclerviewlikeplaystore.R
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.component.activity.BaseActivity
+import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.about.AboutFragment
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.country.CountryFragment
 import com.pisey.kotlinrecyclerviewlikeplaystore.ui.main.food.FoodFragment
 import com.pisey.kotlinrecyclerviewlikeplaystore.util.Constant
@@ -43,6 +44,7 @@ class MainActivity : BaseActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_me -> {
+                replaceFragment(layout_content.id,::AboutFragment)
                 setMenuTitle(Constant.NavigateType.ABOUT)
                 return@OnNavigationItemSelectedListener true
             }
